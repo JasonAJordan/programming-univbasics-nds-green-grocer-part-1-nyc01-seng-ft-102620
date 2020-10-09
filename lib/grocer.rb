@@ -36,7 +36,7 @@ def consolidate_cart(cart)
     
       item_counted = consolidated[idxinner]
       
-      if item_hash[:item] == item_counted[:item] do 
+      if item_hash[:item] == item_counted[:item] 
         item_counted[:count] = item_counted[:count] + 1
         wasFound = true
       end 
@@ -44,7 +44,7 @@ def consolidate_cart(cart)
       idxinner += 1 
     end 
     
-    if wasFound == false do
+    if wasFound == false
       new_consolidated_item = item_hash
       new_consolidated_item[:count] = 1
       consolidated.push(new_consolidated_item)
