@@ -40,19 +40,20 @@ def consolidate_cart(cart)
         item_counted[:count] = item_counted[:count] + 1
         wasFound = true
       end 
+      
       idxinner += 1 
     end 
     
-    if consolidated.length == 0 do 
+    if wasFound == false do
       new_consolidated_item = item_hash
       new_consolidated_item[:count] = 1
       consolidated.push(new_consolidated_item)
     end 
       
-     
+    idx += 1
   end 
     
-
+  consolidated
 end
 
 
