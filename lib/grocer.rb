@@ -8,7 +8,7 @@ def find_item_by_name_in_collection(name, collection)
   while idx < collection.length do 
     items_hash = collection[idx]
     
-      if items_hashes[:item] == name 
+      if items_hash[:item] == name 
         return items_hash
       end
     idx += 1
