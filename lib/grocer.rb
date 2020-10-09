@@ -39,11 +39,14 @@ def consolidate_cart(cart)
           item_counted[:count] = item_counted[:count] + 1
         else 
           item_counted[:count] = 1
-        end 
+        end
+        
+      else 
+        consolidated.push item_hash
       end 
     end 
     
-    if item_hash[:item] in 
+    item_hash 
 
 end
 
