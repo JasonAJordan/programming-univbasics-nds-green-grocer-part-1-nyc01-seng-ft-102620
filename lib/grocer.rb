@@ -5,8 +5,13 @@ def find_item_by_name_in_collection(name, collection)
 
   idx = 0;
   
-  while collection[items_] do 
-
+  while idx < collection.length do 
+    items_hash = collection[idk]
+    
+      if items_hashes[:item] == name 
+        return items_hash
+      end
+    idx += 1
 end
 
 def consolidate_cart(cart)
