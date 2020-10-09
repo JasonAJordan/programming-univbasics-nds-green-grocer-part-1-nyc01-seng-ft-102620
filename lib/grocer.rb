@@ -27,9 +27,23 @@ def consolidate_cart(cart)
   idx = 0
   
   while idx < cart.length do 
-    items_hash = cart[idx]
+    item_hash = cart[idx]
+    idxinner = 0
     
-    if items_hash[:item] in 
+    while idxinner < consolidated.length || consolidated.length == 0 do 
+      item_counted = consolidated[idxinner]
+      
+      if item_hash[:item] == item_counted[:item] do 
+        
+        if item_counted[:count] do 
+          item_counted[:count] = item_counted[:count] + 1
+        else 
+          item_counted[:count] = 1
+        end 
+      end 
+    end 
+    
+    if item_hash[:item] in 
 
 end
 
