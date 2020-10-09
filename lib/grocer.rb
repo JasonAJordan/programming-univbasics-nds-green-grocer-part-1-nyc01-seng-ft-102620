@@ -42,7 +42,8 @@ def consolidate_cart(cart)
         end
         
       else 
-        consolidated.push item_hash
+        consolidated.push(item_hash)
+        
       end 
     end 
     
